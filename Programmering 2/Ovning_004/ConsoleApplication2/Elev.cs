@@ -12,7 +12,7 @@ namespace ConsoleApplication2
         {
         
         }
-        public Elev(string namn, string adress, string pnr, string telenr)
+        public Elev(string namn, string adress, string pnr, string telenr) /*Mycket bra med 2 konstrutorer. */
         {
             setNamn(namn);
             setAdress(adress);
