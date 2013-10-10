@@ -11,7 +11,7 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
             Lärare l = new Lärare();
-
+            
             Elev e = new Elev();
         }
     }
