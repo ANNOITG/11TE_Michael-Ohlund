@@ -9,7 +9,6 @@ namespace ConsoleApplication2
     class Lärare : Person
     {
         private int lon;
-        private List<string> kurser;
         
         public Lärare()
         {

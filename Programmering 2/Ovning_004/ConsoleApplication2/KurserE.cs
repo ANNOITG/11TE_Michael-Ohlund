@@ -13,7 +13,7 @@ namespace ConsoleApplication2
         public Lärare lärare { get; set; }
 
         public List<Elev> elever = new List<Elev>();
-
+        
 
     }
 }

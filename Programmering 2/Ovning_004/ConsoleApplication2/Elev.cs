@@ -9,24 +9,23 @@ namespace ConsoleApplication2
     class Elev : Person
     {
         private string klass;
-        private List<string> kurserE;
+        public string betyg { get; set; }
 
         public Elev()
         {
            
         }
-        public Elev(string namn, string adress, string pnr, string telenr, string klass, List<String> kurserE) /*Mycket bra med 2 konstrutorer. */
+        public Elev(string namn, string adress, string pnr, string telenr, string klass) /*Mycket bra med 2 konstrutorer. */
         {
             setNamn(namn);
             setAdress(adress);
             setPnr(pnr);
             setTelenr(telenr);
             this.klass = klass;
-            this.kurserE = kurserE;
         }
-        public void betygavlärare(string betyg, Lärare lärare, string kurs)
+        public void betygavlärare(string betyg, KurserE kurs)
         {
-            string elevkursbetyg = kurs + ":" + betyg + "Lärare:" + lärare;
+            kurs.elever.Single(e => e.getPnr() == this.getPnr()).betyg = betyg;
         }
 
         public override string ToString()
